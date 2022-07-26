@@ -1,0 +1,158 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Variables */
+:root {
+    --content: black;
+    --bg: #eee;
+    --accent: dodgerblue;
+    --font: 'Balsamiq Sans', Arial, Helvetica, sans-serif;
+}
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+/* Flex classes */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+/* Utility classes */
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.em {
+    font-style: italic;
+}
+
+.pad {
+    padding: 1em;
+}
+
+.small {
+    font-size: small;
+}
+
+.rad {
+    border-radius: 12px;
+}
+
+.bor {
+    border: 2px solid var(--content);
+}
+
+.wide {
+    width: 100%;
+}
+
+.greyb {
+    background-color: #aaa;
+}
+
+/* Element classes */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--bg);
+}
+
+h1 {
+    color: var(--bg);
+}
+
+.col>img {
+    border-radius: 50%;
+}
+
+select {
+    background-color: white;
+    font-family: var(--font);
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+.high {
+    color: red;
+}
+
+.low {
+    color: var(--accent);
+}
+
+.btn {
+    background-color: var(--accent);
+    white-space: nowrap;
+    padding: 0.25rem 1rem;
+}
+
+/* Anatomical classes */
+body {
+    background-color: var(--bg);
+}
+
+header {
+    background-color: var(--accent);
+}
+
+header a {
+    font-size: large;
+}
+
+header a:hover {
+    transform: scale(1.1);
+}
+
+.top.row {
+    margin: 2rem 0;
+}
+
+hr {
+    margin-bottom: 2rem;
+}
+
+.temps.row {
+    justify-content: space-around;
+    font-size: larger;
+}
+
+.cookies-dialog {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background-color: white;
+}
+
+.message a {
+    color: var(--accent);
+}
+
+.message a:hover {
+    text-decoration: underline;
+}
