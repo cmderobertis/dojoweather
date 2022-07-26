@@ -86,6 +86,7 @@ let low4 = document.getElementById('low4')
 function update(city) {
     // if city passed in, update currentCity
     currentCity = city ? city : currentCity
+    cityName.innerText = currentCity
 
     // update images
     img1.src = imageMap[getWeather(currentCity, 'today', 'sky')]
